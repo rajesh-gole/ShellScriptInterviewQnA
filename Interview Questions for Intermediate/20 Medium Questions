@@ -1,0 +1,116 @@
+Q21. What makes C shell a more preferable option than the Bourne Shell?
+C is a more preferable option in the following cases:
+
+All the commands can be aliased simply with the C shell whereas the same is not possible in case of Bourne Shell.
+Lengthy commands can be used again and again in C shell whereas the Bourne doesn’t allow the same in all the cases.
+The command history can be accessed through the C shell but it cannot be accessed through the Bourne.
+Q22. How would you compare the strings in a Shell Script?
+The test command is used to compare the text strings. The test command compares text strings by comparing each character in each string.
+
+Q23. How to redirect both standard output and standard error to the same location?
+The two methods to redirect standard output and standard error to the same location are the following;
+
+2>&1(# ls /usr/share/doc > out.txt 2>&1 )
+&>(# ls /usr/share/doc &> out.txt )
+Q24. Differentiate between ‘ and ” quotes.
+Single Quotes: Used in case evaluation of variables to values is undesired.
+Double Quotes: Used in case evaluation of variables to values is required.
+Q25. When should shell programming/scripting not be used?
+It is not advisable to use Shell scripting in the following cases;
+
+When the task is very much complex, e.g. writing the entire payroll processing system.
+Where there is a high degree of productivity required.
+When it needs or involves different software tools.
+Q26. What is the lifespan of a variable inside a shell script?
+The lifespan of a variable inside shell script is only until the end of execution.
+
+Q27. What is a file system?
+The file system is a collection of files which contain information related to the files.
+
+Q28. What are the default permissions of a file when it is created?
+On Linux and other Unix-like operating systems, new files are created with a default set of permissions. The umask or user mask command is used to determine the default permissions for newly created files. It is a 4-digit Octal number which is set and expressed using symbolic values. The default permission of a file when it is created is 664 i.e. rw-rw-r-. The table for file permissions is given below;
+
+0	0	No permissions
+1	1	execute
+2	2	write
+3	1+2	execute + write
+4	4	read
+5	1+4	execute + read
+6	2+4	write + read
+7	1+2+4	execute + write + read
+Q29. What does it mean by #!/bin/sh or #!/bin/bash at the beginning of every script?
+A script may specify #!/bin/bash on the first line, meaning that the script should always be run with bash, rather than another shell. /bin/sh is an executable representing the system shell. Actually, it is usually implemented as a symbolic link pointing to the executable for whichever shell is the system shell.
+
+Q30. What is the difference between $* and $@?
+$@ treats each quoted arguments as separate arguments but $* will consider the entire set of positional parameters as a single string.
+
+Q31. Determine the output of the following command: name=Shubham && echo ‘My name is $name’.
+q31 - Shell Scripting Interview Questions - Edureka
+question 31 – Shell Scripting Interview Questions – Edureka
+
+Q32. Determine the output of the following command: [ -z “” ] && echo 0 || echo 1 
+q32 - Shell Scripting Interview Questions - Edureka
+question 32 – Shell Scripting Interview Questions – Edureka
+
+Q33. Determine the output of the following command: echo ${new:-variable}
+q34 - Shell Scripting Interview Questions - Edureka
+
+q33 – Shell Scripting Interview Questions – Edureka
+
+Q34. How to get part of string variable with echo command only?
+#!/bin/sh
+echo ${variable:x:y}
+#x - start position
+#y - length
+
+variable="My name is Upasana, and I work at Edureka."
+echo ${variable:11:7} # will display Upasana
+
+q34 - Shell Scripting Interview Questions - Edureka
+q34 – Shell Scripting Interview Questions – Edureka
+
+Q35. Rewrite the command to print the sentence and convert the variable to plural: echo “I like $variable”.
+q35 - Shell Scripting Interview Questions - Edureka
+q35 – Shell Scripting Interview Questions – Edureka
+
+Q36. How to print all the arguments provided to the script?
+#!/bin/bash  for i; do     echo $i  done
+
+
+q36 - Shell Scripting Interview Questions - Edureka
+q36 – Shell Scripting Interview Questions – Edureka
+
+Q37. How to print PID of the current shell?
+
+
+#!/bin/sh
+
+for PID in $$
+do
+echo $PID
+done
+
+q37 - Shell Scripting Interview Questions - Edureka
+q37 – Shell Scripting Interview Questions – Edureka
+
+Q38. How to print all array elements and their respective indexes?
+!/bin/sh
+array=("This" "is" "Shell" "Scripting")
+echo ${array[@]}
+echo ${!array[@]}
+
+q39 - Shell Scripting Interview Questions - Edureka
+q38 – Shell Scripting Interview Questions – Edureka
+
+Q39. How to print the first array element?
+#!/bin/sh
+array=("This" "is" "Shell" "Scripting" )
+echo ${array[0]}
+
+q38 - Shell Scripting Interview Questions - Edureka
+q39 – Shell Scripting Interview Questions – Edureka
+
+Q40. What is the Crontab?
+Crontab stands for cron table because it uses the job scheduler cron to execute tasks. The crontab is a list of commands that you want to run on a regular schedule, and also the name of the command used to manage that list. 
+
+The schedule is called the crontab, which is also the name of the program used to edit that schedule.
