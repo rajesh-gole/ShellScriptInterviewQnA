@@ -1,0 +1,134 @@
+Q1. What is Shell?
+The Shell is a Command Line Interpreter. It translates commands entered by the user and converts them into a language that is understood by the Kernel. The shell interprets a command typed in at the terminal, and calls the program that you want. 
+
+Q2. What is a Shell Script? Can you name some of its advantages? 
+A shell script is a command-containing text-file that contains commands in order of their execution. Typical operations performed by shell scripts include printing text, file manipulation, and program execution.
+
+Following are the two main advantages of shell scripting:
+
+It facilitates developing your own custom OS with relevant features which best suit your needs.
+It facilitates designing software applications according to their respective platforms.
+Q3. What are the different types of variables used in Shell Script?
+ A shell script has two types of variables :
+
+System-defined variables are created/defined by the Operating System(Linux) itself. These variables are generally defined in Capital Letters and can be viewed by “set” command.
+User-defined variables are created or defined by system users and the values of variables can be viewed by using the command “echo”.
+Q4. What are the different types of commonly used shells on a typical Linux system?
+There are primarily two kinds of shells in Linux OS, namely, Bourne Shell and C-Shell. Examples of derivative from each are as follows;
+
+Bourne Shell: Bourne Shell, Bourne-Again Shell, Korn Shell, POSIX Shell.
+C-Shell: C-Shell, TENEX C-Shell, Z-Shell
+Q5. How do you create a shortcut in Linux?
+This can be done with the help of links present in Linux OS.
+
+Hard Link: Hard links are linked to the inode of the file and have to be on the same file system as of the file. Deleting the original file does not affect the hard link.
+
+Soft Link: Soft links are linked to the file name and can reside on a different file system as well. Deleting the original file makes the soft link inactive.
+
+Q6. Tell something about the Super Block in Shell scripting?
+A Super Block is essentially a program that contains a record of specific file systems.
+
+Characteristics such as the block size, the empty and the filled blocks and their respective counts, the size and location of the inode tables, the disk block map, and usage information, and the size of the block groups are available in a superblock.
+
+Q7. What is GUI scripting?
+GUI is used for controlling a computer and its applications. GUI scripting supports different applications. It mostly depends on the operating system.
+
+Q8. What are the various stages of a Linux process it passes through?
+A Linux process generally passes through four stages:
+
+Waiting: The Linux process waits for the resource.
+Running: The Linux process is currently being executed.
+Stopped: The Linux process is stopped after successful execution.
+Zombie: The process has stopped but is still active in the process table.
+Q9. What is the difference between break and continue commands?
+Break: It is a simple way to escape out of a loop in progress. We can use the break command to exit out from any loop, including while and until loops.
+Continue: It causes the present iteration of the loop to exit, instead of the entire loop.
+Q10. What is the significance of the Shebang line in Shell Scripting?
+The Shebang line is present at the top of the script,e.g. #!/bin/sh. It simply provides information regarding the location where the engine is placed. The engine is the one that executes the script. 
+
+Shell Scripting Interview Questions & Answers | Edureka
+
+This video covers the types of Linux Shell Scripting Interview Questions for candidates of beginners through an advanced level of expertise in Shell Scripting. Each segment comes with ten theory questions and 10 demos, each run on the Linux terminal for a better understanding of the viewers.
+
+Q11. How to pass an argument to a script?
+#!/bin/sh
+ct $1
+
+ 
+
+q11-Shell-Scripting-Interview-Questions-Edureka question 11 – Shell Scripting Interview Questions – Edureka 
+
+Q12. How to use arguments in a Script?
+#!/bin/sh
+cp $1 $2
+
+q12 - Shell Scripting Interview Questions - Edureka
+ question 12 – Shell Scripting Interview Questions – Edureka 
+
+Q13. How to calculate the number of passed arguments?
+#!/bin/sh
+echo "Number of Parameters passed:$#"
+
+q13 - Shell Scripting Interview Questions - Edureka
+question 13 – Shell Scripting Interview Questions – Edureka 
+
+Q14. How to get script name inside a script?
+!/bin/sh
+echo "Script Name:$0"
+
+q14 - Shell Scripting Interview Questions - Edureka
+question 14 – Shell Scripting Interview Questions – Edureka
+
+Q15. How to check if the previous command was run successfully?
+#!/bin/sh
+var=$?
+if var=0
+then
+echo "Script was Run successfully"
+
+else
+echo "Script was unsuccessful"
+fi
+
+q15 - Shell Scripting Interview Questions - Edureka
+question 15 – Shell Scripting Interview Questions – Edureka
+
+Q16. How to get the last line from a file using just the terminal?
+tail -1 <filename>
+
+Q17. How to get the first line from a file using just the terminal?
+head -1 <filename>
+
+Q18. How to get the 3rd element/column from each line from a file?
+#!/bin/sh
+awk '{print $3}' $1
+
+q18 - Shell Scripting Interview Questions - Edureka
+question 18 – Shell Scripting Interview Questions – Edureka
+
+Q19. How to write a function?
+#!/bin/sh
+
+function example {
+echo "Hello Learner"
+}
+
+Q20. Write down the Syntax for all the loops in Shell Scripting.
+For Loop:
+
+for var in word1 word2 ... wordN
+do
+   Statement(s) to be executed for every word.
+done
+While Loop:
+
+while command
+do
+   Statement(s) to be executed if command is true
+done
+
+Until Loop:
+  until command
+do
+   Statement(s) to be executed until command is true
+done
